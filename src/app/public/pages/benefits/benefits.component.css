@@ -1,0 +1,112 @@
+.benefits {
+  background-color: rgba(232, 144, 65, 1); /* Fondo naranja */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: left;
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+h2 span {
+  font-weight: bold;
+  font-size: 50px;
+  display: block; /* Añadir display block para que cada línea se muestre correctamente */
+  margin-bottom: 10px;
+}
+
+/* Contenedor de rejilla con 3 columnas */
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 4rem;
+}
+
+/* Cuadro individual de cada beneficio */
+.cuadro {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px; /* Bordes redondeados para dar un aspecto moderno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.cuadro:hover {
+  transform: translateY(-10px); /* Efecto al pasar el ratón por encima */
+}
+
+/* Tamaño del avatar del icono */
+.mat-mdc-card-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+/* Estilo del título */
+.mat-mdc-card-title {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.mat-mdc-card-title h3 {
+  font-size: 22px;
+  font-weight: bold;
+color: black
+}
+
+/* Contenido del cuadro */
+.mat-mdc-card-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .contenedor-grid {
+    grid-template-columns: 1fr; /* En pantallas más pequeñas, una sola columna */
+  }
+  .benefits {
+    height: auto;
+
+  }
+
+  h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  h2 span {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .mat-mdc-card-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h2 span {
+    font-size: 32px;
+  }
+
+  .mat-mdc-card-title h3 {
+    font-size: 20px;
+  }
+
+  .mat-mdc-card-content p {
+    font-size: 16px;
+  }
+}

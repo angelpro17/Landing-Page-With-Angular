@@ -1,0 +1,31 @@
+.sponsor {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  background-color: var(--background-color);
+  padding: 2rem 0;
+}
+h2 {
+  font-size: 36px;
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+}
+h2 span {
+  font-weight: bold;
+  font-size: 70px;
+}
+.sponsors {
+  margin-left: 7rem;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas fijas */
+  gap: 10rem;
+  max-width: 1200px; /* Puedes ajustar este valor según tu diseño */
+}
+
+.sponsors img {
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* O ajusta este valor según sea necesario */
+}

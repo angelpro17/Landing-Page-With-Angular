@@ -1,0 +1,76 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 9%;
+  z-index: 1000;
+  background-color: #333333;
+}
+.header .logoUF img {
+  height: 40px;
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.header .navbar a {
+  font-size: 1.4rem;
+  margin: 0 1.5rem;
+  padding: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.language-selector {
+  position: relative;
+  margin-right: 15px;
+}
+.selected-language {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+.login-btn, .register-btn {
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.login-btn {
+  background-color: white;
+  color: #2196F3;
+}
+.register-btn {
+  background-color: #2196F3;
+  color: white;
+}
+#menu-btn {
+  display: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .header .navbar, .header-right {
+    display: none;
+  }
+  #menu-btn {
+    display: block;
+  }
+}

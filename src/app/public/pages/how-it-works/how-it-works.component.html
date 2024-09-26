@@ -1,0 +1,12 @@
+<section class="how-it-works" id="funcionalidad">
+  <h2>Cómo<br> <span>Funciona</span></h2>
+  <div class="steps-container">
+    <mat-card class="step" *ngFor="let step of steps">
+      <img mat-card-image [src]="step.image" [alt]="step.title">
+      <mat-card-title><h3>{{ step.title }}</h3></mat-card-title>
+      <mat-card-content>
+        <p>{{ step.description }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

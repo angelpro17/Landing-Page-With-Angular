@@ -1,0 +1,27 @@
+<section class="home" id="inicio">
+  <div class="content">
+    <h1 class="mat-display-2">ㅤㅤ</h1>
+    <h1 class="mat-display-2">Viaja cómodo, seguro y<br>económico con GoUni</h1>
+    <p class="mat-body-1">Comparte viajes con tus compañeros de universidad. Ahorra <br>dinero, haz amigos y cuida el medio ambiente.</p>
+
+    <form [formGroup]="joinForm" (ngSubmit)="onSubmit()" class="join-form">
+      <mat-form-field appearance="outline">
+        <mat-label>Tu correo universitario</mat-label>
+        <input matInput type="email" formControlName="email" placeholder="Tu correo universitario" required>
+        <mat-error *ngIf="joinForm.get('email')?.hasError('required')">El correo es requerido</mat-error>
+        <mat-error *ngIf="joinForm.get('email')?.hasError('email')">Ingresa un correo válido</mat-error>
+        <mat-error *ngIf="joinForm.get('email')?.hasError('invalidInstitutionalEmail')">El correo debe ser institucional</mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="!joinForm.valid">Unirme</button>
+    </form>
+
+    <a class="login-link" href="#">¿Ya tienes cuenta? Iniciar sesión</a>
+  </div>
+</section>
+
+<app-how-it-works></app-how-it-works>
+<app-benefits></app-benefits>
+<app-security></app-security>
+<app-plans></app-plans>
+<app-contact></app-contact>

@@ -1,0 +1,14 @@
+<section class="benefits" id="beneficios">
+  <h2>Conoce<br> <span>Nuestros<br>Beneficios de GoUni</span></h2>
+  <div class="contenedor-grid">
+    <mat-card class="cuadro" *ngFor="let beneficio of beneficios">
+      <mat-card-header>
+        <img mat-card-avatar [src]="beneficio.icono" [alt]="beneficio.titulo">
+        <mat-card-title><h3>{{ beneficio.titulo }}</h3></mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ beneficio.descripcion }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

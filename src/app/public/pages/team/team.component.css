@@ -1,0 +1,77 @@
+.equipo {
+  background-color: var(--background-color);
+  padding: 4rem 2rem;
+  width: auto;
+  height: 50rem;
+}
+
+.box-container {
+  display: grid;
+  margin-top: 7rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.box {
+  position: relative;
+  height: 30rem;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+}
+h2 span {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box span {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 5rem;
+  font-weight: bolder;
+  color: black;
+}
+
+.box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.box:hover .content {
+  opacity: 1;
+}
+
+.box .content h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.box .content p {
+  font-size: 1rem;
+  color: var(--light-black);
+}

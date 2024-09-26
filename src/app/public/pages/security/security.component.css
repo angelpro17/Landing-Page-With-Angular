@@ -1,0 +1,105 @@
+/* Contenedor principal */
+.security {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 9%;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+/* Contenido de la seguridad */
+.security-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+/* Títulos de la seguridad */
+h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Prioridad - Título principal más grande */
+.priority {
+  font-size: 50px;
+  font-weight: bold;
+  color: #f25430; /* Color resaltado para dar importancia */
+  margin-bottom: 2rem;
+}
+
+/* Texto del párrafo */
+p {
+  font-size: 20px;
+  color: #666;
+  line-height: 1.6; /* Mejora la legibilidad con más espacio entre líneas */
+  margin-bottom: 2rem;
+}
+
+/* Estilo para íconos en la lista */
+.mat-list-icon {
+  color: #f25430;
+  font-size: 36px; /* Aumentar tamaño de íconos */
+}
+
+/* Estilo para las líneas de la lista */
+.mat-line {
+  font-size: 20px;
+  color: #333;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+
+
+/* Imagen en la sección de seguridad */
+.security-image {
+  flex: 1;
+  text-align: center;
+}
+
+/* Ajuste de la imagen */
+.security-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .security {
+    flex-direction: column;
+    padding: 2rem 5%;
+  }
+
+  .security-content {
+    padding-right: 0;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .security-image {
+    margin-right: 10rem;
+
+  }
+
+  .priority {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .mat-line {
+    font-size: 16px;
+  }
+
+  .mat-list-icon {
+    font-size: 28px; /* Reducir tamaño de íconos en pantallas pequeñas */
+  }
+}
