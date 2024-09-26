@@ -7,7 +7,7 @@
     <form [formGroup]="joinForm" (ngSubmit)="onSubmit()" class="join-form">
       <mat-form-field appearance="outline">
         <mat-label>Tu correo universitario</mat-label>
-        <input matInput type="email" formControlName="email" placeholder="Tu correo universitario" required>
+        <input matInput type="email"  formControlName="email" placeholder="Tu correo universitario" required>
         <mat-error *ngIf="joinForm.get('email')?.hasError('required')">El correo es requerido</mat-error>
         <mat-error *ngIf="joinForm.get('email')?.hasError('email')">Ingresa un correo válido</mat-error>
         <mat-error *ngIf="joinForm.get('email')?.hasError('invalidInstitutionalEmail')">El correo debe ser institucional</mat-error>
