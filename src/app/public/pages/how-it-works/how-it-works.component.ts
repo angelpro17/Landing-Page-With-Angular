@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatCard, MatCardContent, MatCardImage, MatCardTitle} from "@angular/material/card";
 import {NgForOf} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-how-it-works',
@@ -10,27 +11,16 @@ import {NgForOf} from "@angular/common";
     NgForOf,
     MatCard,
     MatCardTitle,
-    MatCardImage
+    MatCardImage,
+    TranslateModule
   ],
   templateUrl: './how-it-works.component.html',
   styleUrl: './how-it-works.component.css'
 })
 export class HowItWorksComponent {
   steps = [
-    {
-      image: 'icon1.png',
-      title: '1. Regístrate',
-      description: 'Crea tu perfil con tu correo universitario y verifica tu cuenta'
-    },
-    {
-      image: 'icon2.png',
-      title: '2. Busca o Publica Viajes',
-      description: 'Encuentra compañeros que vayan a tu universidad o publica tu ruta'
-    },
-    {
-      image: 'icon3.png',
-      title: '3. Viaja y Ahorra',
-      description: 'Comparte gastos, reduce emisiones y haz nuevos amigos'
-    }
+    { image: 'icon1.png', clave: 'step1' },
+    { image: 'icon2.png', clave: 'step2' },
+    { image: 'icon3.png', clave: 'step3' }
   ];
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatCard, MatCardContent, MatCardImage, MatCardTitle} from "@angular/material/card";
 import {NgForOf} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-features',
@@ -10,7 +11,8 @@ import {NgForOf} from "@angular/common";
     MatCardTitle,
     MatCardImage,
     MatCardContent,
-    NgForOf
+    NgForOf,
+    TranslateModule
   ],
   templateUrl: './features.component.html',
   styleUrl: './features.component.css'

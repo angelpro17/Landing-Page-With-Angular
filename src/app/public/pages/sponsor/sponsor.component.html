@@ -1,5 +1,5 @@
 <section class="sponsor" id="sponsors">
-  <h2>Conoce a<br><span>Nuestros Sponsors</span></h2>
+  <h2>{{ 'sponsors.title' | translate }}<br><span>{{ 'sponsors.subtitle' | translate }}</span></h2>
   <div class="sponsors">
     <img *ngFor="let sponsor of sponsors" [src]="sponsor.logo" alt="{{ sponsor.name }}">
   </div>

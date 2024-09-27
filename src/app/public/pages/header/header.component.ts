@@ -4,6 +4,7 @@ import {FooterComponent} from "../../components/footer/footer.component";
 import {FeaturesComponent} from "../features/features.component";
 import {SponsorComponent} from "../sponsor/sponsor.component";
 import {TeamComponent} from "../team/team.component";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,8 @@ import {TeamComponent} from "../team/team.component";
     FooterComponent,
     FeaturesComponent,
     SponsorComponent,
-    TeamComponent
+    TeamComponent,
+    TranslateModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'

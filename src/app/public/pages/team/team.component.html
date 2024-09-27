@@ -1,5 +1,5 @@
 <section class="equipo" id="nosotros">
-  <h2>Conoce<br><span>Nuestro Equipo</span></h2>
+  <h2>{{ 'team.title' | translate }}<br><span>{{ 'team.subtitle' | translate }}</span></h2>
   <div class="box-container">
     <div class="box" *ngFor="let member of team">
       <span>{{ member.id }}</span>
@@ -7,7 +7,6 @@
       <div class="content">
         <h3>{{ member.name }}</h3>
         <p>{{ member.role }}</p>
-        <p *ngIf="member.extraRole">{{ member.extraRole }}</p>
       </div>
     </div>
   </div>

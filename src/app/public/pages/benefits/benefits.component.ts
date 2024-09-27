@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatCard, MatCardAvatar, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
 import {NgForOf} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-benefits',
@@ -11,18 +12,19 @@ import {NgForOf} from "@angular/common";
     MatCardAvatar,
     MatCardHeader,
     MatCard,
-    NgForOf
+    NgForOf,
+    TranslateModule
   ],
-  templateUrl: './benefits.component.html' ,
+  templateUrl: './benefits.component.html',
   styleUrl: './benefits.component.css'
 })
 export class BenefitsComponent {
   beneficios = [
-    { icono: 'pig.png', titulo: 'Ahorra dinero', descripcion: 'Comparte los gastos de transporte con tus compañeros y reduce tus costos diarios.' },
-    { icono: 'people.png', titulo: 'Haz nuevos amigos', descripcion: 'Conoce a otros estudiantes y amplía tu círculo social universitario.' },
-    { icono: 'leaf.png', titulo: 'Cuida el medio ambiente', descripcion: 'Reduce tu huella de carbono compartiendo viajes con otros estudiantes.' },
-    { icono: 'shield.png', titulo: 'Viaja Seguro', descripcion: 'Disfruta de un sistema de verificación de usuarios para mayor tranquilidad.' },
-    { icono: 'clock.png', titulo: 'Flexibilidad', descripcion: 'Adapta tus viajes a tu horario y necesidades universitarias.' },
-    { icono: 'graduation_hat.png', titulo: 'Comunidad Universitaria', descripcion: 'Forma parte de una red exclusiva de estudiantes de tu universidad.' }
+    { icono: 'pig.png', clave: 'benefit1' },
+    { icono: 'people.png', clave: 'benefit2' },
+    { icono: 'leaf.png', clave: 'benefit3' },
+    { icono: 'shield.png', clave: 'benefit4' },
+    { icono: 'clock.png', clave: 'benefit5' },
+    { icono: 'graduation_hat.png', clave: 'benefit6' }
   ];
 }

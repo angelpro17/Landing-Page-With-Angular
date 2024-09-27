@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { NgForOf, NgIf } from '@angular/common';
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-team',
   standalone: true,
   imports: [
     NgIf,
-    NgForOf
+    NgForOf,
+    TranslateModule
   ],
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.css'] // Cambia styleUrl a styleUrls

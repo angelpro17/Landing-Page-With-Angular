@@ -12,6 +12,7 @@ import {MatLine} from "@angular/material/core";
 import {MatIcon} from "@angular/material/icon";
 import {MatList, MatListItem} from "@angular/material/list";
 import {NgForOf, NgIf} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-plans',
@@ -29,7 +30,8 @@ import {NgForOf, NgIf} from "@angular/common";
     MatCardHeader,
     MatCard,
     NgForOf,
-    NgIf
+    NgIf,
+    TranslateModule
   ],
   templateUrl: './plans.component.html',
   styleUrl: './plans.component.css'

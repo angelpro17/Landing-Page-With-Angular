@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {MatButtonToggle, MatButtonToggleGroup} from "@angular/material/button-toggle";
-import {TranslateService} from "@ngx-translate/core";
+import { MatButtonToggle, MatButtonToggleGroup } from "@angular/material/button-toggle";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-language-switcher',
@@ -17,11 +17,15 @@ export class LanguageSwitcherComponent {
   protected languages: string[] = ['en', 'es'];
 
   constructor(private translate: TranslateService) {
-    this.currentLang = this.translate.currentLang;
+    const savedLang = localStorage.getItem('language');
+    this.currentLang = savedLang ? savedLang : 'en';
+    this.translate.setDefaultLang(this.currentLang);
+    this.translate.use(this.currentLang);
   }
 
   useLanguage(language: string) {
     this.translate.use(language);
     this.currentLang = language;
+    localStorage.setItem('language', language);
   }
 }

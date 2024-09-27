@@ -1,13 +1,12 @@
-/* Estilos generales para la sección de planes */
 .plans {
   padding: 5rem 9%;
   background-color: rgba(232, 144, 65, 1);
   text-align: left;
-  height: auto;/* Ocupar toda la altura de la pantalla */
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centrar verticalmente */
-  align-items: center; /* Centrar horizontalmente */
+  justify-content: center;
+  align-items: center;
 }
 
 .plans .our-plans {
@@ -25,7 +24,6 @@
   flex-wrap: wrap;
 }
 
-/* Estilo de los cards */
 .plan-card {
   background-color: #fff;
   border-radius: 10px;
@@ -44,7 +42,7 @@
 }
 
 .featured {
-  border: 5px solid black; /* Ajustar color del borde según sea necesario */
+  border: 5px solid black;
 }
 
 .plan-card h3 {
@@ -55,13 +53,13 @@
 }
 
 .plan-card .price {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: bold;
   border-bottom: 2px solid black;
   color: black;
   margin-bottom: 2rem;
   text-align: center;
-  border-bottom: 2px solid #333; /* Línea debajo del precio */
+  border-bottom: 2px solid #333;
   padding-bottom: 30px;
 }
 
@@ -150,7 +148,7 @@
   }
 
   .plan-card button {
-    margin-left: 0; /* Alinear el botón en pantallas pequeñas */
+    margin-left: 0;
   }
 
   .plan-card .cancel {

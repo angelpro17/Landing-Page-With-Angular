@@ -3,6 +3,7 @@ import {MatLine} from "@angular/material/core";
 import {MatIcon} from "@angular/material/icon";
 import {MatList, MatListItem} from "@angular/material/list";
 import {NgForOf} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-security',
@@ -12,7 +13,8 @@ import {NgForOf} from "@angular/common";
     MatIcon,
     MatListItem,
     MatList,
-    NgForOf
+    NgForOf,
+    TranslateModule
   ],
   templateUrl: './security.component.html',
   styleUrl: './security.component.css'

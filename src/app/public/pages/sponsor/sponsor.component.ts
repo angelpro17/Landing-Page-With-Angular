@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import {NgForOf} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-sponsor',
   standalone: true,
   imports: [
-    NgForOf
+    NgForOf,
+    TranslateModule
   ],
   templateUrl: './sponsor.component.html',
   styleUrl: './sponsor.component.css'
