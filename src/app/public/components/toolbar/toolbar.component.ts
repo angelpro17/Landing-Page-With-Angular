@@ -30,10 +30,10 @@ import {TranslateModule} from "@ngx-translate/core";
 })
 export class ToolbarComponent {
   openLogin() {
-    // Implement login logic
+    window.open('https://frontend-five-wheat-92.vercel.app/login', '_self'); // Abre el enlace en la misma pestaña
   }
 
   openRegister() {
-    // Implement register logic
+    window.open('https://frontend-five-wheat-92.vercel.app/register', '_self'); // Abre el enlace de registro en la misma pestaña
   }
 }
