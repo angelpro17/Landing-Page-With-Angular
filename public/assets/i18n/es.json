@@ -6,6 +6,9 @@
       "plans": "Planes",
       "contact": "Contacto"
   },
+  "abouttheproduct":{
+    "title": "Acerca de nuestro producto GoUni"
+  },
     "footer": {
       "howItWorks": "Cómo Funciona",
       "ourPlans": "Nuestros Planes",

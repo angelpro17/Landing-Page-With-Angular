@@ -15,6 +15,7 @@ import { SecurityComponent } from "../security/security.component";
 import { LoadingDialogComponent } from "../loading-dialog/loading-dialog.component";
 import { MatDialog } from "@angular/material/dialog";
 import {TranslateModule} from "@ngx-translate/core";
+import {AbouttheproductComponent} from "../abouttheproduct/abouttheproduct.component";
 
 @Component({
   selector: 'app-home',
@@ -34,7 +35,8 @@ import {TranslateModule} from "@ngx-translate/core";
     HowItWorksComponent,
     PlansComponent,
     SecurityComponent,
-    TranslateModule
+    TranslateModule,
+    AbouttheproductComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
