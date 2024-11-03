@@ -9,6 +9,7 @@
   padding: 1rem 9%;
   z-index: 1000;
   background-color: #333333;
+
 }
 
 .header .logoUF img {
@@ -18,7 +19,7 @@
 .header .navbar {
   display: flex;
   align-items: center;
-  gap: 0;
+  gap: inherit;
 }
 
 .header .navbar a {
