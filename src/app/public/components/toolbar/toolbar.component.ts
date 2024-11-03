@@ -8,6 +8,11 @@ import {MatToolbar} from "@angular/material/toolbar";
 import {RouterLink} from "@angular/router";
 import {LanguageSwitcherComponent} from "../language-switcher/language-switcher.component";
 import {TranslateModule} from "@ngx-translate/core";
+import {MatDivider} from "@angular/material/divider";
+import {MatMenu, MatMenuTrigger} from "@angular/material/menu";
+import {NgIf} from "@angular/common";
+import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
+import {Subject, takeUntil} from "rxjs";
 
 @Component({
   selector: 'app-toolbar',
@@ -23,7 +28,11 @@ import {TranslateModule} from "@ngx-translate/core";
     MatButton,
     RouterLink,
     LanguageSwitcherComponent,
-    TranslateModule
+    TranslateModule,
+    MatDivider,
+    MatMenu,
+    NgIf,
+    MatMenuTrigger
   ],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.css'
@@ -35,5 +44,23 @@ export class ToolbarComponent {
 
   openRegister() {
     window.open('https://frontend-five-wheat-92.vercel.app/register', '_self'); // Abre el enlace de registro en la misma pestaña
+  }
+  isHandset = false;
+  private destroy$ = new Subject<void>();
+
+  constructor(private breakpointObserver: BreakpointObserver) {}
+
+  ngOnInit() {
+    this.breakpointObserver
+      .observe([Breakpoints.Handset])
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(result => {
+        this.isHandset = result.matches;
+      });
+  }
+
+  ngOnDestroy() {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 }

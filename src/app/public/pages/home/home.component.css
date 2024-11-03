@@ -20,12 +20,10 @@
   padding: 2rem;
   z-index: 2;
   color: white;
-
 }
 
 .mat-display-2 {
-
-  font-size: 4rem;
+  font-size: 4rem; /* Default font size */
   color: white;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -82,24 +80,37 @@ button[mat-raised-button] {
   margin-top: 10px;
   font-weight: bold;
 }
+
 .content h1 {
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 5rem; /* Default font size for larger screens */
 }
-.content p{
+
+.content p {
   font-weight: bold;
 }
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .home {
-    padding-top: 5rem;
+    margin-top: -2rem;
+    padding-top: 10rem;
     height: auto;
   }
+
   .mat-display-2 {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Smaller font size for smaller screens */
     text-align: center;
   }
+
   .mat-body-1 {
     font-size: 1.2rem;
     text-align: center;
+  }
+
+  .content h1 {
+    font-size: 2rem; /* Smaller title font size for smaller screens */
+    margin-top: 2rem;
+    line-height: 2.5rem;
   }
 }

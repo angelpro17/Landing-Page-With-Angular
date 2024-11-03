@@ -5,6 +5,7 @@
     </a>
   </div>
 
+  <!-- Desktop Navigation -->
   <nav class="navbar">
     <a href="#inicio">{{ 'toolbar.home' | translate }}</a>
     <a href="#funcionalidad">{{ 'toolbar.functionality' | translate }}</a>
@@ -12,6 +13,7 @@
     <a href="#planes">{{ 'toolbar.plans' | translate }}</a>
     <a href="#contacto">{{ 'toolbar.contact' | translate }}</a>
   </nav>
+
   <div class="header-right">
     <div class="language-selector">
       <app-language-switcher></app-language-switcher>
@@ -19,5 +21,50 @@
     <button class="login-btn" (click)="openLogin()">LogIn</button>
     <button class="register-btn" (click)="openRegister()">Register</button>
   </div>
-  <div id="menu-btn" class="fas fa-bars"></div>
+
+  <!-- Mobile Menu Button -->
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="mobileMenu"
+    class="menu-btn"
+    id="menu-btn">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <!-- Mobile Menu -->
+  <mat-menu #mobileMenu="matMenu" class="mobile-menu" [overlapTrigger]="false">
+    <div class="mobile-menu-container">
+      <a mat-menu-item href="#inicio" class="mobile-menu-item">
+        <mat-icon class="menu-icon">home</mat-icon>
+        <span>{{ 'toolbar.home' | translate }}</span>
+      </a>
+      <a mat-menu-item href="#funcionalidad" class="mobile-menu-item">
+        <mat-icon class="menu-icon">settings</mat-icon>
+        <span>{{ 'toolbar.functionality' | translate }}</span>
+      </a>
+      <a mat-menu-item href="#beneficios" class="mobile-menu-item">
+        <mat-icon class="menu-icon">star</mat-icon>
+        <span>{{ 'toolbar.benefits' | translate }}</span>
+      </a>
+      <a mat-menu-item href="#planes" class="mobile-menu-item">
+        <mat-icon class="menu-icon">assignment</mat-icon>
+        <span>{{ 'toolbar.plans' | translate }}</span>
+      </a>
+      <a mat-menu-item href="#contacto" class="mobile-menu-item">
+        <mat-icon class="menu-icon">mail</mat-icon>
+        <span>{{ 'toolbar.contact' | translate }}</span>
+      </a>
+      <mat-divider></mat-divider>
+      <div class="mobile-menu-buttons">
+        <button mat-menu-item (click)="openLogin()" class="mobile-menu-button">
+          <mat-icon class="menu-icon">login</mat-icon>
+          <span>Login</span>
+        </button>
+        <button mat-menu-item (click)="openRegister()" class="mobile-menu-button">
+          <mat-icon class="menu-icon">person_add</mat-icon>
+          <span>Register</span>
+        </button>
+      </div>
+    </div>
+  </mat-menu>
 </header>
