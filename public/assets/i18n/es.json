@@ -8,7 +8,9 @@
   },
   "abouttheproduct":{
     "title": "Acerca de nuestro producto GoUni"
-  },
+  },  "abouttheteam":{
+  "title": "Acerca de nuestro equipo GoUni"
+},
     "footer": {
       "howItWorks": "Cómo Funciona",
       "ourPlans": "Nuestros Planes",

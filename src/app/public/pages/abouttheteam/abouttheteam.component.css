@@ -1,0 +1,37 @@
+.abouttheteam {
+  padding: 7rem 9%;
+  background-color: white;
+  text-align: center;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  margin: 3rem auto;
+  padding: 1rem;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background-color: black;
+  width: 95%; /* Ocupa el 95% del ancho de la página */
+  max-width: 1250px; /* Ancho máximo considerable */
+  min-width: 900px; /* Ancho mínimo aumentado */
+}
+
+.video-abouttheteam {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9; /* Mantiene la proporción del video */
+}
+
+.abouttheteam .our-abouttheteam {
+  font-size: 50px;
+  color: black;
+  margin-bottom: 4rem;
+  font-weight: bold;
+  margin-top: -3rem;
+}
